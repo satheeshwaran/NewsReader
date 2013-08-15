@@ -1,15 +1,11 @@
 //
-//  VBTransport.m
-//  Vibe
+//  LNRTransport.m
 //
-//  Created by PC242748 on 18/07/13.
-//  Copyright (c) 2013 Cognizant. All rights reserved.
 //
 
-#import "VBTransport.h"
-#import "VBShared.h"
+#import "LNRTransport.h"
 
-@interface VBTransport()
+@interface LNRTransport()
 
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSDictionary *dataToTransport;
@@ -19,7 +15,7 @@
 
 @end
 
-@implementation VBTransport
+@implementation LNRTransport
 
 - (id)initWithURL:(NSURL *)url andWithDetails:(NSDictionary *)postData {
     
@@ -103,21 +99,6 @@
         self.completionHandler([self.responseData copy],self.statusCode);
 }
 
-- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
-    VBShared *user = [VBShared sharedInstance];
-    if ([challenge previousFailureCount] == 0) {
-        NSLog(@"received authentication challenge");
-        NSString *userName = [NSString stringWithFormat:@"%@",user.userName];
-        NSString *pwd = [NSString stringWithFormat:@"%@",user.password];
-        NSURLCredential *newCredential = [NSURLCredential credentialWithUser:userName
-                                                                    password:pwd
-                                                                 persistence:NSURLCredentialPersistenceForSession];
-        NSLog(@"Pwd : %@",[newCredential password]);
-        [[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
-    }
-    else {
-        NSLog(@"previous authentication failure");
-    }
-}
+
 
 @end

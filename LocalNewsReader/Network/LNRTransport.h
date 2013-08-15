@@ -1,14 +1,12 @@
 //
-//  VBTransport.h
-//  Vibe
+//  LNRTransport.h
+
 //
-//  Created by PC242748 on 18/07/13.
-//  Copyright (c) 2013 Cognizant. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface VBTransport : NSObject
+@interface LNRTransport : NSObject
 
 @property (nonatomic, copy) void (^completionHandler)(NSData *resData, int statusCode);
 

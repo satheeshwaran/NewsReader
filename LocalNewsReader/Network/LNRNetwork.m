@@ -1,12 +1,10 @@
 //
-//  CANetwork.h
-//  ComeAlive
+//  LNRNetwork.m
 //
 //  Created by PC242748 on 10/05/13.
-//  Copyright (c) 2013 Cognizant. All rights reserved.
 //
 
-#import "CANetwork.h"
+#import "LNRNetwork.h"
 
 @interface NSURLRequest (ServiceClient)
 @end
@@ -15,7 +13,7 @@
 
 @end
 
-@implementation CANetwork
+@implementation LNRNetwork
 
 BOOL isNetworkAvailable=YES;
 BOOL firstNotification=NO;
@@ -47,7 +45,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	
 	if(((isReachable && !needsConnection) ? YES : NO))
 	{
-		@synchronized([CANetwork class])
+		@synchronized([LNRNetwork class])
 		{
 			isNetworkAvailable=YES;
 		}		

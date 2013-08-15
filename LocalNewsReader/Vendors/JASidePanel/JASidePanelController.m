@@ -25,8 +25,6 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "JASidePanelController.h"
-#import "UINavigationController+UPSCAdditions.h"
-#import "UINavigationItem+UPSCAdditions.h"
 
 static char ja_kvoContext;
 
@@ -157,7 +155,6 @@ static char ja_kvoContext;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationItem setCustomBackButtonWithTarget:self.navigationController];
     self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     self.centerPanelContainer = [[UIView alloc] initWithFrame:self.view.bounds];

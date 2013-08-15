@@ -115,9 +115,14 @@
 		A5D7FE8017BD107200A823E6 /* UIViewExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE7617BD107200A823E6 /* UIViewExtention.m */; };
 		A5D7FE8717BD1E1400A823E6 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE8417BD1E1400A823E6 /* JASidePanelController.m */; };
 		A5D7FE8817BD1E1400A823E6 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE8617BD1E1400A823E6 /* UIViewController+JASidePanel.m */; };
-		A5D7FE8C17BD204A00A823E6 /* VBTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE8B17BD204A00A823E6 /* VBTransport.m */; };
-		A5D7FE8F17BD20FE00A823E6 /* CANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE8E17BD20FE00A823E6 /* CANetwork.m */; };
+		A5D7FE8C17BD204A00A823E6 /* LNRTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE8B17BD204A00A823E6 /* LNRTransport.m */; };
+		A5D7FE8F17BD20FE00A823E6 /* LNRNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE8E17BD20FE00A823E6 /* LNRNetwork.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A5D7FE9117BD211300A823E6 /* view_Pad.html in Resources */ = {isa = PBXBuildFile; fileRef = A5D7FE9017BD211300A823E6 /* view_Pad.html */; };
+		A5D7FE9317BD270600A823E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D7FE9217BD270600A823E6 /* QuartzCore.framework */; };
+		A5D7FE9517BD271A00A823E6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D7FE9417BD271A00A823E6 /* Security.framework */; };
+		A5D7FE9717BD272400A823E6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D7FE9617BD272400A823E6 /* MobileCoreServices.framework */; };
+		A5D7FE9917BD273100A823E6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D7FE9817BD273100A823E6 /* CFNetwork.framework */; };
+		A5D7FE9B17BD273900A823E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D7FE9A17BD273900A823E6 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,11 +271,16 @@
 		A5D7FE8417BD1E1400A823E6 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		A5D7FE8517BD1E1400A823E6 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
 		A5D7FE8617BD1E1400A823E6 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
-		A5D7FE8A17BD204A00A823E6 /* VBTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTransport.h; sourceTree = "<group>"; };
-		A5D7FE8B17BD204A00A823E6 /* VBTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTransport.m; sourceTree = "<group>"; };
-		A5D7FE8D17BD20FE00A823E6 /* CANetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CANetwork.h; sourceTree = "<group>"; };
-		A5D7FE8E17BD20FE00A823E6 /* CANetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CANetwork.m; sourceTree = "<group>"; };
+		A5D7FE8A17BD204A00A823E6 /* LNRTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRTransport.h; sourceTree = "<group>"; };
+		A5D7FE8B17BD204A00A823E6 /* LNRTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRTransport.m; sourceTree = "<group>"; };
+		A5D7FE8D17BD20FE00A823E6 /* LNRNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRNetwork.h; sourceTree = "<group>"; };
+		A5D7FE8E17BD20FE00A823E6 /* LNRNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRNetwork.m; sourceTree = "<group>"; };
 		A5D7FE9017BD211300A823E6 /* view_Pad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = view_Pad.html; sourceTree = "<group>"; };
+		A5D7FE9217BD270600A823E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A5D7FE9417BD271A00A823E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A5D7FE9617BD272400A823E6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A5D7FE9817BD273100A823E6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A5D7FE9A17BD273900A823E6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,10 +288,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D7FE9B17BD273900A823E6 /* SystemConfiguration.framework in Frameworks */,
+				A5D7FE9917BD273100A823E6 /* CFNetwork.framework in Frameworks */,
+				A5D7FE9717BD272400A823E6 /* MobileCoreServices.framework in Frameworks */,
+				A5D7FE9517BD271A00A823E6 /* Security.framework in Frameworks */,
+				A5D7FE9317BD270600A823E6 /* QuartzCore.framework in Frameworks */,
+				A5C8B13617BCE88B0078C9C4 /* CoreGraphics.framework in Frameworks */,
 				A5C8B21217BD0AD50078C9C4 /* CoreData.framework in Frameworks */,
 				A5C8B13217BCE88B0078C9C4 /* UIKit.framework in Frameworks */,
 				A5C8B13417BCE88B0078C9C4 /* Foundation.framework in Frameworks */,
-				A5C8B13617BCE88B0078C9C4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +335,11 @@
 		A5C8B13017BCE88B0078C9C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5D7FE9A17BD273900A823E6 /* SystemConfiguration.framework */,
+				A5D7FE9817BD273100A823E6 /* CFNetwork.framework */,
+				A5D7FE9617BD272400A823E6 /* MobileCoreServices.framework */,
+				A5D7FE9417BD271A00A823E6 /* Security.framework */,
+				A5D7FE9217BD270600A823E6 /* QuartzCore.framework */,
 				A5C8B21117BD0AD50078C9C4 /* CoreData.framework */,
 				A5C8B13117BCE88B0078C9C4 /* UIKit.framework */,
 				A5C8B13317BCE88B0078C9C4 /* Foundation.framework */,
@@ -596,10 +616,10 @@
 		A5D7FE8917BD204900A823E6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A5D7FE8D17BD20FE00A823E6 /* CANetwork.h */,
-				A5D7FE8E17BD20FE00A823E6 /* CANetwork.m */,
-				A5D7FE8A17BD204A00A823E6 /* VBTransport.h */,
-				A5D7FE8B17BD204A00A823E6 /* VBTransport.m */,
+				A5D7FE8D17BD20FE00A823E6 /* LNRNetwork.h */,
+				A5D7FE8E17BD20FE00A823E6 /* LNRNetwork.m */,
+				A5D7FE8A17BD204A00A823E6 /* LNRTransport.h */,
+				A5D7FE8B17BD204A00A823E6 /* LNRTransport.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -809,8 +829,8 @@
 				A5D7FE8017BD107200A823E6 /* UIViewExtention.m in Sources */,
 				A5D7FE8717BD1E1400A823E6 /* JASidePanelController.m in Sources */,
 				A5D7FE8817BD1E1400A823E6 /* UIViewController+JASidePanel.m in Sources */,
-				A5D7FE8C17BD204A00A823E6 /* VBTransport.m in Sources */,
-				A5D7FE8F17BD20FE00A823E6 /* CANetwork.m in Sources */,
+				A5D7FE8C17BD204A00A823E6 /* LNRTransport.m in Sources */,
+				A5D7FE8F17BD20FE00A823E6 /* LNRNetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,7 @@
 //
-//  CANetwork.h
-//  ComeAlive
+//  LNRNetwork.h
 //
 //  Created by PC242748 on 10/05/13.
-//  Copyright (c) 2013 Cognizant. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,7 +10,7 @@
 
 
 
-@interface CANetwork : NSObject {
+@interface LNRNetwork : NSObject {
 
 }
 
