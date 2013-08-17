@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Articles" syncable="YES">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Article" representedClassName="Article" syncable="YES">
         <attribute name="articleAddedDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="articleDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="articleImageURL" optional="YES" attributeType="String" syncable="YES"/>
@@ -9,24 +9,27 @@
         <attribute name="articlePublishedDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="articleSource" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="articleURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="articlesFeed" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Feed" inverseName="feedArticles" inverseEntity="Feed" syncable="YES"/>
     </entity>
-    <entity name="Categories" syncable="YES">
+    <entity name="Category" representedClassName="Category" syncable="YES">
         <attribute name="categoryAddedDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="categoryFeeds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Feeds" inverseName="feedCategory" inverseEntity="Feeds" syncable="YES"/>
+        <relationship name="categoryFeeds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Feed" inverseName="feedCategory" inverseEntity="Feed" syncable="YES"/>
     </entity>
-    <entity name="Feeds" syncable="YES">
+    <entity name="Feed" representedClassName="Feed" syncable="YES">
         <attribute name="feedAddedDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="feedID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="feedImageURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="feedLocalImageURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="feedName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="feedCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="categoryFeeds" inverseEntity="Categories" syncable="YES"/>
+        <attribute name="feedURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="feedArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="articlesFeed" inverseEntity="Article" syncable="YES"/>
+        <relationship name="feedCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="categoryFeeds" inverseEntity="Category" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Articles" positionX="-3231" positionY="-1269" width="128" height="165"/>
-        <element name="Categories" positionX="-3384" positionY="-1302" width="128" height="105"/>
-        <element name="Feeds" positionX="-3080" positionY="-1314" width="128" height="135"/>
+        <element name="Article" positionX="-3105" positionY="-1227" width="128" height="178"/>
+        <element name="Category" positionX="-3411" positionY="-1467" width="128" height="103"/>
+        <element name="Feed" positionX="-3267" positionY="-1351" width="128" height="163"/>
     </elements>
 </model>

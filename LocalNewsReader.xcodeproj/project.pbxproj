@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84E99FF517C0219400096106 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FF417C0219400096106 /* Article.m */; };
+		84E99FF817C0219400096106 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FF717C0219400096106 /* Feed.m */; };
+		84E99FFB17C0219400096106 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFA17C0219400096106 /* Category.m */; };
 		A5C8B13217BCE88B0078C9C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13117BCE88B0078C9C4 /* UIKit.framework */; };
 		A5C8B13417BCE88B0078C9C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13317BCE88B0078C9C4 /* Foundation.framework */; };
 		A5C8B13617BCE88B0078C9C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13517BCE88B0078C9C4 /* CoreGraphics.framework */; };
@@ -136,6 +139,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84E99FF317C0219400096106 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		84E99FF417C0219400096106 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		84E99FF617C0219400096106 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		84E99FF717C0219400096106 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		84E99FF917C0219400096106 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		84E99FFA17C0219400096106 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 		A5C8B12E17BCE88B0078C9C4 /* LocalNewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C8B13117BCE88B0078C9C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5C8B13317BCE88B0078C9C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -313,6 +322,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84E99FF217C01F9900096106 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84E99FF917C0219400096106 /* Category.h */,
+				84E99FFA17C0219400096106 /* Category.m */,
+				84E99FF617C0219400096106 /* Feed.h */,
+				84E99FF717C0219400096106 /* Feed.m */,
+				84E99FF317C0219400096106 /* Article.h */,
+				84E99FF417C0219400096106 /* Article.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A5C8B12517BCE88B0078C9C4 = {
 			isa = PBXGroup;
 			children = (
@@ -540,16 +562,9 @@
 				A5D7FE0117BD0FE100A823E6 /* CoreDataHelper.h */,
 				A5D7FE0217BD0FE100A823E6 /* CoreDataHelper.m */,
 				A5D7FE0317BD0FE100A823E6 /* LocalNewsReader.xcdatamodeld */,
-				A5D7FE0517BD0FE100A823E6 /* Models */,
+				84E99FF217C01F9900096106 /* Models */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		A5D7FE0517BD0FE100A823E6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		A5D7FE0617BD0FE100A823E6 /* Categories */ = {
@@ -831,6 +846,9 @@
 				A5D7FE8817BD1E1400A823E6 /* UIViewController+JASidePanel.m in Sources */,
 				A5D7FE8C17BD204A00A823E6 /* LNRTransport.m in Sources */,
 				A5D7FE8F17BD20FE00A823E6 /* LNRNetwork.m in Sources */,
+				84E99FF517C0219400096106 /* Article.m in Sources */,
+				84E99FF817C0219400096106 /* Feed.m in Sources */,
+				84E99FFB17C0219400096106 /* Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
