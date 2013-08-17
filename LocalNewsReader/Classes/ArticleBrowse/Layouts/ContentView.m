@@ -9,7 +9,6 @@
 #import "ContentView.h"
 #import "Article.h"
 #import "Utils.h"
-#import <ImageIO/ImageIO.h>
 
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
@@ -25,7 +24,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self = [super init];
     if (self) {
         // Initialization code
-        _article=article;
+        self.article=article;
         [self initializeFields];
         UITapGestureRecognizer* tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
 		[self addGestureRecognizer:tapRecognizer];
@@ -116,7 +115,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [contentView setFrame:CGRectMake(1, 1, self.frame.size.width-1, self.frame.size.height - 2)];
 	CGSize contentViewArea = CGSizeMake(contentView.frame.size.width, contentView.frame.size.height);
     
-   if(!_article.isArticleImageAvailable) {
+   if(!self.article.isArticleImageAvailable) {
         
         [contentTitle setFrame:CGRectMake(contentView.frame.origin.x + 15, contentView.frame.origin.y, contentView.frame.size.width -20, contentView.frame.size.height)];
         [self setLabelHeightAndLines:contentTitle withSize:20.0];
@@ -130,7 +129,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     else { 
         if(contentViewArea.width>600)
         {
-            //[contentView setBackgroundColor:[UIColor greenColor]];
+            
             [self.contentImageView setFrame:CGRectMake(contentView.frame.origin.x + 15, contentView.frame.origin.y +10, 350, contentView.frame.size.height - 20)];
             
             [contentTitle setFrame:CGRectMake(self.contentImageView.frame.origin.x + self.contentImageView.frame.size.width + 10, contentView.frame.origin.y +10, contentView.frame.size.width - self.contentImageView.frame.size.width  -30, contentView.frame.size.height)];
@@ -143,7 +142,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         }
         else if(contentViewArea.width<350 && contentViewArea.height>350)
         {
-            //[contentView setBackgroundColor:[UIColor redColor]];
+            
            [self.contentImageView setFrame:CGRectMake(contentView.frame.origin.x + 15, contentView.frame.origin.y +10, contentView.frame.size.width -30, 150)];
             
             [contentTitle setFrame:CGRectMake(contentView.frame.origin.x + 15, self.contentImageView.frame.origin.y+self.contentImageView.frame.size.height + 10, contentView.frame.size.width -25, contentView.frame.size.height)];
@@ -156,7 +155,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         }
         else if(contentViewArea.width<400 && contentViewArea.height<350)
         {
-            //[contentView setBackgroundColor:[UIColor yellowColor]];
+            
             [self.contentImageView setFrame:CGRectMake(contentView.frame.origin.x + 15, contentView.frame.origin.y +10, 140, contentView.frame.size.height - 20)];
             
             [contentTitle setFrame:CGRectMake(self.contentImageView.frame.origin.x + self.contentImageView.frame.size.width + 10, contentView.frame.origin.y +10, contentView.frame.size.width - self.contentImageView.frame.size.width  -30, contentView.frame.size.height)];
@@ -168,7 +167,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             [self setLabelHeightAndLines:contentDescription withSize:16.0];
         }
         else if (contentViewArea.width>400 && contentViewArea.height<350) {
-            //[contentView setBackgroundColor:[UIColor brownColor]];
+            
             [self.contentImageView setFrame:CGRectMake(contentView.frame.origin.x + 15, contentView.frame.origin.y +10, 200, contentView.frame.size.height - 20)];
             
             [contentTitle setFrame:CGRectMake(self.contentImageView.frame.origin.x + self.contentImageView.frame.size.width + 10, contentView.frame.origin.y +10, contentView.frame.size.width - self.contentImageView.frame.size.width  -30, contentView.frame.size.height)];
@@ -195,28 +194,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         }
    }
 }
-/*
--(void)setImageViewBasedOnImgSizeforFrame:(CGSize)imgViewSize
-{
-    NSMutableDictionary *dictImgProps = [NSMutableDictionary new];
-    NSURL *imageURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"cuomo" ofType:@"jpg"] isDirectory:NO];
-    if (imageURL == nil)
-        return ;
-    
-    CGImageSourceRef imageSourceRef = CGImageSourceCreateWithURL((__bridge CFURLRef)imageURL, NULL);
-    if(imageSourceRef == NULL)
-        return ;
-    
-    CFDictionaryRef props = CGImageSourceCopyPropertiesAtIndex(imageSourceRef, 0, NULL);
-    CFRelease(imageSourceRef);
-    
-    NSLog(@"%@", (__bridge NSDictionary *)props);
-    [dictImgProps setValue:[(__bridge NSDictionary *)props objectForKey:@"PixelWidth"] forKey:@"Width"];
-    [dictImgProps setValue:[(__bridge NSDictionary *)props objectForKey:@"PixelHeight"] forKey:@"Height"];
-    
-    CFRelease(props);
-}
- */
+
 
 -(void)setLabelHeightAndLines:(UILabel *)label withSize:(CGFloat)size
 {

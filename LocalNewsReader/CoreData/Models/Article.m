@@ -10,7 +10,7 @@
 #import "Feed.h"
 
 
-@implementation Articles
+@implementation Article
 
 @dynamic articleAddedDate;
 @dynamic articleDescription;

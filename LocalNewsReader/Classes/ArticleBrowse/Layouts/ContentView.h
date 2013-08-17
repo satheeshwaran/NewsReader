@@ -15,7 +15,7 @@
 @end
 
 @interface ContentView : UIViewExtention {
-    //NSObject<TapDelegate> * delegate;
+    
     UIView *contentView;
     UIImageView *contentImageView;
     UILabel *contentSource;
