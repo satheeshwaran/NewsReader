@@ -10,6 +10,10 @@
 		84E99FF517C0219400096106 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FF417C0219400096106 /* Article.m */; };
 		84E99FF817C0219400096106 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FF717C0219400096106 /* Feed.m */; };
 		84E99FFB17C0219400096106 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFA17C0219400096106 /* Category.m */; };
+		84E99FFF17C0251200096106 /* LNRBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFD17C0251200096106 /* LNRBrowseViewController.m */; };
+		84E9A00017C0251200096106 /* LNRBrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E99FFE17C0251200096106 /* LNRBrowseViewController.xib */; };
+		84E9A00417C0253200096106 /* LNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9A00217C0253200096106 /* LNRDetailViewController.m */; };
+		84E9A00517C0253200096106 /* LNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A00317C0253200096106 /* LNRDetailViewController.xib */; };
 		A5C8B13217BCE88B0078C9C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13117BCE88B0078C9C4 /* UIKit.framework */; };
 		A5C8B13417BCE88B0078C9C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13317BCE88B0078C9C4 /* Foundation.framework */; };
 		A5C8B13617BCE88B0078C9C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13517BCE88B0078C9C4 /* CoreGraphics.framework */; };
@@ -145,6 +149,12 @@
 		84E99FF717C0219400096106 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 		84E99FF917C0219400096106 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		84E99FFA17C0219400096106 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		84E99FFC17C0251200096106 /* LNRBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRBrowseViewController.h; sourceTree = "<group>"; };
+		84E99FFD17C0251200096106 /* LNRBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRBrowseViewController.m; sourceTree = "<group>"; };
+		84E99FFE17C0251200096106 /* LNRBrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRBrowseViewController.xib; sourceTree = "<group>"; };
+		84E9A00117C0253200096106 /* LNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		84E9A00217C0253200096106 /* LNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		84E9A00317C0253200096106 /* LNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRDetailViewController.xib; sourceTree = SOURCE_ROOT; };
 		A5C8B12E17BCE88B0078C9C4 /* LocalNewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C8B13117BCE88B0078C9C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5C8B13317BCE88B0078C9C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -529,6 +539,9 @@
 		A5D7FDF517BD0FE100A823E6 /* ArticleBrowse */ = {
 			isa = PBXGroup;
 			children = (
+				84E99FFC17C0251200096106 /* LNRBrowseViewController.h */,
+				84E99FFD17C0251200096106 /* LNRBrowseViewController.m */,
+				84E99FFE17C0251200096106 /* LNRBrowseViewController.xib */,
 				A5D7FE6217BD107200A823E6 /* Layouts */,
 			);
 			path = ArticleBrowse;
@@ -537,6 +550,9 @@
 		A5D7FDF617BD0FE100A823E6 /* ArticleDetail */ = {
 			isa = PBXGroup;
 			children = (
+				84E9A00117C0253200096106 /* LNRDetailViewController.h */,
+				84E9A00217C0253200096106 /* LNRDetailViewController.m */,
+				84E9A00317C0253200096106 /* LNRDetailViewController.xib */,
 			);
 			path = ArticleDetail;
 			sourceTree = "<group>";
@@ -788,6 +804,8 @@
 				A5D7FE5617BD0FE100A823E6 /* LNRMenuViewController_iPad.xib in Resources */,
 				A5D7FE5717BD0FE100A823E6 /* LNRMenuViewController_iPhone.xib in Resources */,
 				A5D7FE9117BD211300A823E6 /* view_Pad.html in Resources */,
+				84E9A00017C0251200096106 /* LNRBrowseViewController.xib in Resources */,
+				84E9A00517C0253200096106 /* LNRDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +867,8 @@
 				84E99FF517C0219400096106 /* Article.m in Sources */,
 				84E99FF817C0219400096106 /* Feed.m in Sources */,
 				84E99FFB17C0219400096106 /* Category.m in Sources */,
+				84E99FFF17C0251200096106 /* LNRBrowseViewController.m in Sources */,
+				84E9A00417C0253200096106 /* LNRDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
