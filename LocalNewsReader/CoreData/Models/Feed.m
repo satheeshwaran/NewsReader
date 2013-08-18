@@ -21,5 +21,6 @@
 @dynamic feedURL;
 @dynamic feedCategory;
 @dynamic feedArticles;
+@dynamic isFavorited;
 
 @end

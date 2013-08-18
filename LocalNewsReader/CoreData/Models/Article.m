@@ -1,5 +1,5 @@
 //
-//  Articles.m
+//  Article.m
 //  LocalNewsReader
 //
 //  Created by Admin on 8/18/13.
@@ -20,6 +20,7 @@
 @dynamic articlePublishedDate;
 @dynamic articleSource;
 @dynamic articleURL;
+@dynamic isArticleImageAvailable;
 @dynamic articlesFeed;
 
 @end

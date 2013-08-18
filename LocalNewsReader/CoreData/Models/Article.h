@@ -1,5 +1,5 @@
 //
-//  Articles.h
+//  Article.h
 //  LocalNewsReader
 //
 //  Created by Admin on 8/18/13.
@@ -21,6 +21,7 @@
 @property (nonatomic, retain) NSString * articlePublishedDate;
 @property (nonatomic, retain) NSString * articleSource;
 @property (nonatomic, retain) NSString * articleURL;
+@property (nonatomic, retain) NSNumber * isArticleImageAvailable;
 @property (nonatomic, retain) Feed *articlesFeed;
 
 @end

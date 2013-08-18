@@ -8,7 +8,6 @@
 
 #import "ContentView.h"
 #import "Article.h"
-#import "Utils.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
@@ -40,7 +39,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self addSubview:contentView];
     
     self.contentImageView = [[UIImageView alloc]init];
-    self.contentImageView.image = [UIImage imageWithData:self.article.articleImageData];
+    //self.contentImageView.image = [UIImage imageWithData:self.article.articleImageData];
     self.contentImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.contentImageView.clipsToBounds = YES;
     [self addSubview:self.contentImageView];
@@ -70,10 +69,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     
     contentDescription = [[UILabel alloc]init];
     [contentDescription setBackgroundColor:[UIColor clearColor]];
-    if (self.article.articleContent.length>self.article.articleDescription.length)
-        contentDescription.text=[self stripTags:self.article.articleContent];
-    else
-        contentDescription.text=[self stripTags:self.article.articleDescription];
+//    if (self.article.articleContent.length>self.article.articleDescription.length)
+//        contentDescription.text=[self stripTags:self.article.articleContent];
+//    else
+//        contentDescription.text=[self stripTags:self.article.articleDescription];
     
     [contentDescription setTextColor:UIColorFromRGB(0x090909)];
     contentDescription.textAlignment = NSTextAlignmentLeft;
@@ -115,7 +114,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [contentView setFrame:CGRectMake(1, 1, self.frame.size.width-1, self.frame.size.height - 2)];
 	CGSize contentViewArea = CGSizeMake(contentView.frame.size.width, contentView.frame.size.height);
     
-   if(!self.article.isArticleImageAvailable) {
+   /*if(!self.article.isArticleImageAvailable) {
         
         [contentTitle setFrame:CGRectMake(contentView.frame.origin.x + 15, contentView.frame.origin.y, contentView.frame.size.width -20, contentView.frame.size.height)];
         [self setLabelHeightAndLines:contentTitle withSize:20.0];
@@ -126,7 +125,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         [self setLabelHeightAndLines:contentDescription withSize:16.0];
         
     }
-    else { 
+    else {*/ 
         if(contentViewArea.width>600)
         {
             
@@ -192,7 +191,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         else {
             [contentView setBackgroundColor:[UIColor clearColor]];
         }
-   }
+  // }
 }
 
 

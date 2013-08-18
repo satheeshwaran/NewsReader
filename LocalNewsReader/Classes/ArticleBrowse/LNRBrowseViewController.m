@@ -7,6 +7,7 @@
 //
 
 #import "LNRBrowseViewController.h"
+#import "LNRTransport.h"
 
 @interface LNRBrowseViewController ()
 
@@ -27,6 +28,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self fetchFeed];
+}
+
+-(void)fetchFeed {
+    
+    LNRTransport *feedTrans = [[LNRTransport alloc]initWithURL:[NSURL URLWithString:FEED_URL] andWithDetails:nil];
+    [feedTrans makeHTTPRequest];
+    [feedTrans setCompletionHandler:^(NSData *responseData, int status) {
+        
+        NSString *responseStr = [[NSString alloc]initWithBytes:[responseData bytes] length:[responseData length] encoding:NSUTF8StringEncoding];
+        NSLog(@"Response : %@",responseStr);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

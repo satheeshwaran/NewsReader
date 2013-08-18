@@ -7,6 +7,9 @@
 //
 
 
+#define FEED_URL @"http://pipes.yahoo.com/pipes/pipe.run?_id=64739dffdbc6caf5dc3417839a6b8edc&_render=rss"
+
+
 // iPhone CONSTANTS
 
 #define kTableLength    (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)? 768 : 320

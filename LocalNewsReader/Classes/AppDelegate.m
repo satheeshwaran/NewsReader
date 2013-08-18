@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [[CoreDataHelper sharedInstance] checkAttributeWithAttributeName:@"categoryID" InEntityWithEntityName:@"Categories" ForPreviousItems:@"test"];
+    [[CoreDataHelper sharedInstance] checkAttributeWithAttributeName:@"categoryID" InEntityWithEntityName:@"Category" ForPreviousItems:@"test"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

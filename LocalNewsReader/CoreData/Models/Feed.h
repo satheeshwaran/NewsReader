@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSString * feedLocalImageURL;
 @property (nonatomic, retain) NSString * feedName;
 @property (nonatomic, retain) NSString * feedURL;
+@property (nonatomic, retain) NSNumber * isFavorited;
 @property (nonatomic, retain) Category *feedCategory;
 @property (nonatomic, retain) NSSet *feedArticles;
 @end

@@ -97,6 +97,11 @@
     
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.delegate feedSelected:nil];
+}
+
 #pragma mark - Memory Management
 
 - (NSString *) reuseIdentifier 

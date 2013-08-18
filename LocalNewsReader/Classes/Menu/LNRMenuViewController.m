@@ -7,13 +7,14 @@
 //
 
 #import "LNRMenuViewController.h"
+#import "LNRBrowseViewController.h"
 #import "HorizontalTableCell.h"
 #import "ControlVariables.h"
 
 #define kHeadlineSectionHeight  30
 #define kRegularSectionHeight   30
 
-@interface LNRMenuViewController ()
+@interface LNRMenuViewController ()<FeedTapDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,retain) NSMutableArray *reusableCells;
@@ -111,8 +112,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HorizontalTableCell *cell = [self.reusableCells objectAtIndex:indexPath.section];
+    cell.delegate = self;
     
     return cell;
+}
+
+-(void)feedSelected:(Feed *)feed {
+    
+    LNRBrowseViewController *brwseCtrlr = [[LNRBrowseViewController alloc]init];
+    [self.navigationController pushViewController:brwseCtrlr animated:YES];
 }
 
 #pragma mark - Memory Management

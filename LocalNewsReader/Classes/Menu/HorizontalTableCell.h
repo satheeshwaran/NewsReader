@@ -7,6 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Feed.h"
+
+@protocol FeedTapDelegate <NSObject>
+
+-(void)feedSelected:(Feed *)feed;
+
+@end
 
 @interface HorizontalTableCell : UITableViewCell <UITableViewDelegate, UITableViewDataSource>
 {
@@ -14,6 +21,7 @@
     NSArray *_articles;
 }
 
+@property (nonatomic, assign) id <FeedTapDelegate> delegate;
 @property (nonatomic, retain) UITableView *horizontalTableView;
 @property (nonatomic, retain) NSArray *articles;
 
