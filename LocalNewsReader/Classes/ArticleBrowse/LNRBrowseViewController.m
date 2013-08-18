@@ -44,6 +44,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.articles = [NSMutableArray new];
+    self.deviceOrientation = self.interfaceOrientation;
     [self fetchFeed];
 }
 
@@ -65,20 +66,20 @@
                 article.articleURL = [dict objectForKey:@"link"];
                 article.articlePublishedDate = [dict valueForKey:@"pubDate"];
                 article.articleAddedDate = [NSDate date];
-                [self.articles addObject:article];
                 
                 if (![[CoreDataHelper sharedInstance].managedObjectContext save:&error]) {
                     NSLog(@"Couldn't save: %@", error);
                 }
             }
         }
+        [self startGeneratingLayouts];
     }];
-    [self startGeneratingLayouts:self.articles.count];
 }
 
-- (void)startGeneratingLayouts:(int)articlesCount
+- (void)startGeneratingLayouts
 {
-    LayoutsGenerator *lg = [[LayoutsGenerator alloc]initWithArticlesCount:articlesCount];
+    self.articles = [[CoreDataHelper sharedInstance] getObjectsForEntity:@"Article" withSortKey:nil andSortAscending:YES andContext:[CoreDataHelper sharedInstance].managedObjectContext];
+    LayoutsGenerator *lg = [[LayoutsGenerator alloc]initWithArticlesCount:[[CoreDataHelper sharedInstance]countForEntity:@"Article" andContext:[CoreDataHelper sharedInstance].managedObjectContext]];
     self.layoutsAsCombinations = [lg doNumberCrunch];
     self.numberOfPages=self.layoutsAsCombinations.count;
     self.pageControl.numberOfPages=self.numberOfPages;
@@ -100,7 +101,7 @@
             self.scrollView.contentSize=CGSizeMake(self.numberOfPages*self.view.bounds.size.width,self.scrollView.bounds.size.height);
         }
         if ([view isKindOfClass:[LayoutViewExtention class]])
-            [_scrollView addSubview:view];
+            [self.scrollView addSubview:view];
     }
 }
 
@@ -188,7 +189,7 @@
     
     if ([layoutObject isKindOfClass:[LayoutViewExtention class]] ) {
         
-        LayoutViewExtention *layoutToReturn = (LayoutViewExtention*)layoutObject;
+        layoutToReturn = (LayoutViewExtention*)layoutObject;
         [layoutToReturn setFrame:CGRectMake(10,self.scrollView.bounds.origin.y,self.scrollView.bounds.size.width,self.scrollView.bounds.size.height)];
         [layoutToReturn initalizeViews:viewDictionary];
         [layoutToReturn rotate:self.interfaceOrientation animation:NO];
