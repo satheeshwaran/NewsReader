@@ -15,12 +15,13 @@
 		84E218CC17C151F00056991D /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218C817C151F00056991D /* TFHppleElement.m */; };
 		84E218CD17C151F00056991D /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218CA17C151F00056991D /* XPathQuery.m */; };
 		84E218CF17C152170056991D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E218CE17C152170056991D /* libxml2.dylib */; };
+		84E218D117C15DE20056991D /* LNRDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E218D017C15DE20056991D /* LNRDetailViewController_iPhone.xib */; };
 		84E99FF817C0219400096106 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FF717C0219400096106 /* Feed.m */; };
 		84E99FFB17C0219400096106 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFA17C0219400096106 /* Category.m */; };
 		84E99FFF17C0251200096106 /* LNRBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFD17C0251200096106 /* LNRBrowseViewController.m */; };
 		84E9A00017C0251200096106 /* LNRBrowseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E99FFE17C0251200096106 /* LNRBrowseViewController_iPad.xib */; };
 		84E9A00417C0253200096106 /* LNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9A00217C0253200096106 /* LNRDetailViewController.m */; };
-		84E9A00517C0253200096106 /* LNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A00317C0253200096106 /* LNRDetailViewController.xib */; };
+		84E9A00517C0253200096106 /* LNRDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A00317C0253200096106 /* LNRDetailViewController_iPad.xib */; };
 		A5C8B13217BCE88B0078C9C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13117BCE88B0078C9C4 /* UIKit.framework */; };
 		A5C8B13417BCE88B0078C9C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13317BCE88B0078C9C4 /* Foundation.framework */; };
 		A5C8B13617BCE88B0078C9C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13517BCE88B0078C9C4 /* CoreGraphics.framework */; };
@@ -162,6 +163,7 @@
 		84E218C917C151F00056991D /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		84E218CA17C151F00056991D /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		84E218CE17C152170056991D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		84E218D017C15DE20056991D /* LNRDetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRDetailViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
 		84E99FF617C0219400096106 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		84E99FF717C0219400096106 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 		84E99FF917C0219400096106 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
@@ -171,7 +173,7 @@
 		84E99FFE17C0251200096106 /* LNRBrowseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRBrowseViewController_iPad.xib; sourceTree = "<group>"; };
 		84E9A00117C0253200096106 /* LNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRDetailViewController.h; sourceTree = SOURCE_ROOT; };
 		84E9A00217C0253200096106 /* LNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRDetailViewController.m; sourceTree = SOURCE_ROOT; };
-		84E9A00317C0253200096106 /* LNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRDetailViewController.xib; sourceTree = SOURCE_ROOT; };
+		84E9A00317C0253200096106 /* LNRDetailViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRDetailViewController_iPad.xib; sourceTree = SOURCE_ROOT; };
 		A5C8B12E17BCE88B0078C9C4 /* LocalNewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C8B13117BCE88B0078C9C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5C8B13317BCE88B0078C9C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -588,7 +590,8 @@
 			children = (
 				84E9A00117C0253200096106 /* LNRDetailViewController.h */,
 				84E9A00217C0253200096106 /* LNRDetailViewController.m */,
-				84E9A00317C0253200096106 /* LNRDetailViewController.xib */,
+				84E9A00317C0253200096106 /* LNRDetailViewController_iPad.xib */,
+				84E218D017C15DE20056991D /* LNRDetailViewController_iPhone.xib */,
 			);
 			path = ArticleDetail;
 			sourceTree = "<group>";
@@ -842,8 +845,9 @@
 				A5D7FE5717BD0FE100A823E6 /* LNRMenuViewController_iPhone.xib in Resources */,
 				A5D7FE9117BD211300A823E6 /* view_Pad.html in Resources */,
 				84E9A00017C0251200096106 /* LNRBrowseViewController_iPad.xib in Resources */,
-				84E9A00517C0253200096106 /* LNRDetailViewController.xib in Resources */,
+				84E9A00517C0253200096106 /* LNRDetailViewController_iPad.xib in Resources */,
 				84E218C017C128B50056991D /* LNRBrowseViewController_iPhone.xib in Resources */,
+				84E218D117C15DE20056991D /* LNRDetailViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
