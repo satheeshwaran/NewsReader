@@ -7,7 +7,10 @@
 //
 
 
-#define FEED_URL @"http://pipes.yahoo.com/pipes/pipe.run?_id=64739dffdbc6caf5dc3417839a6b8edc&_render=rss"
+#define FEED_URL @"http://pipes.yahoo.com/pipes/pipe.run?_id=64739dffdbc6caf5dc3417839a6b8edc&_render=json"
+
+#define HEADER_HEIGHT 55
+#define FOOTER_HEIGHT 40
 
 
 // iPhone CONSTANTS

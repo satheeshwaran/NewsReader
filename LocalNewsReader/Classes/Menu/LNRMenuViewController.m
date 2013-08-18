@@ -119,7 +119,12 @@
 
 -(void)feedSelected:(Feed *)feed {
     
-    LNRBrowseViewController *brwseCtrlr = [[LNRBrowseViewController alloc]init];
+    LNRBrowseViewController *brwseCtrlr;
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        brwseCtrlr = [[LNRBrowseViewController alloc] initWithNibName:@"LNRBrowseViewController_iPhone" bundle:nil];
+    } else {
+        brwseCtrlr = [[LNRBrowseViewController alloc] initWithNibName:@"LNRBrowseViewController_iPad" bundle:nil];
+    }
     [self.navigationController pushViewController:brwseCtrlr animated:YES];
 }
 

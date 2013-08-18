@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		84E218BB17C0AE2D0056991D /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7FE6417BD107200A823E6 /* ContentView.m */; };
 		84E218BE17C0AF7A0056991D /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218BD17C0AF7A0056991D /* Article.m */; };
+		84E218C017C128B50056991D /* LNRBrowseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E218BF17C128B40056991D /* LNRBrowseViewController_iPhone.xib */; };
+		84E218C317C151740056991D /* LNRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218C217C151730056991D /* LNRUtils.m */; };
+		84E218CB17C151F00056991D /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218C617C151F00056991D /* TFHpple.m */; };
+		84E218CC17C151F00056991D /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218C817C151F00056991D /* TFHppleElement.m */; };
+		84E218CD17C151F00056991D /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E218CA17C151F00056991D /* XPathQuery.m */; };
+		84E218CF17C152170056991D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E218CE17C152170056991D /* libxml2.dylib */; };
 		84E99FF817C0219400096106 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FF717C0219400096106 /* Feed.m */; };
 		84E99FFB17C0219400096106 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFA17C0219400096106 /* Category.m */; };
 		84E99FFF17C0251200096106 /* LNRBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E99FFD17C0251200096106 /* LNRBrowseViewController.m */; };
-		84E9A00017C0251200096106 /* LNRBrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E99FFE17C0251200096106 /* LNRBrowseViewController.xib */; };
+		84E9A00017C0251200096106 /* LNRBrowseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E99FFE17C0251200096106 /* LNRBrowseViewController_iPad.xib */; };
 		84E9A00417C0253200096106 /* LNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9A00217C0253200096106 /* LNRDetailViewController.m */; };
 		84E9A00517C0253200096106 /* LNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A00317C0253200096106 /* LNRDetailViewController.xib */; };
 		A5C8B13217BCE88B0078C9C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C8B13117BCE88B0078C9C4 /* UIKit.framework */; };
@@ -146,13 +152,23 @@
 /* Begin PBXFileReference section */
 		84E218BC17C0AF7A0056991D /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		84E218BD17C0AF7A0056991D /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		84E218BF17C128B40056991D /* LNRBrowseViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRBrowseViewController_iPhone.xib; sourceTree = "<group>"; };
+		84E218C117C151730056991D /* LNRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRUtils.h; sourceTree = "<group>"; };
+		84E218C217C151730056991D /* LNRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRUtils.m; sourceTree = "<group>"; };
+		84E218C517C151F00056991D /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		84E218C617C151F00056991D /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		84E218C717C151F00056991D /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		84E218C817C151F00056991D /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		84E218C917C151F00056991D /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		84E218CA17C151F00056991D /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		84E218CE17C152170056991D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		84E99FF617C0219400096106 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		84E99FF717C0219400096106 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 		84E99FF917C0219400096106 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		84E99FFA17C0219400096106 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 		84E99FFC17C0251200096106 /* LNRBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRBrowseViewController.h; sourceTree = "<group>"; };
 		84E99FFD17C0251200096106 /* LNRBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRBrowseViewController.m; sourceTree = "<group>"; };
-		84E99FFE17C0251200096106 /* LNRBrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRBrowseViewController.xib; sourceTree = "<group>"; };
+		84E99FFE17C0251200096106 /* LNRBrowseViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRBrowseViewController_iPad.xib; sourceTree = "<group>"; };
 		84E9A00117C0253200096106 /* LNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRDetailViewController.h; sourceTree = SOURCE_ROOT; };
 		84E9A00217C0253200096106 /* LNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRDetailViewController.m; sourceTree = SOURCE_ROOT; };
 		84E9A00317C0253200096106 /* LNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNRDetailViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -308,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E218CF17C152170056991D /* libxml2.dylib in Frameworks */,
 				A5D7FE9B17BD273900A823E6 /* SystemConfiguration.framework in Frameworks */,
 				A5D7FE9917BD273100A823E6 /* CFNetwork.framework in Frameworks */,
 				A5D7FE9717BD272400A823E6 /* MobileCoreServices.framework in Frameworks */,
@@ -333,6 +350,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84E218C417C151D60056991D /* HPPLE */ = {
+			isa = PBXGroup;
+			children = (
+				84E218C517C151F00056991D /* TFHpple.h */,
+				84E218C617C151F00056991D /* TFHpple.m */,
+				84E218C717C151F00056991D /* TFHppleElement.h */,
+				84E218C817C151F00056991D /* TFHppleElement.m */,
+				84E218C917C151F00056991D /* XPathQuery.h */,
+				84E218CA17C151F00056991D /* XPathQuery.m */,
+			);
+			name = HPPLE;
+			path = JASidePanel/HPPLE;
+			sourceTree = "<group>";
+		};
 		84E99FF217C01F9900096106 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,6 +409,7 @@
 				A5C8B13317BCE88B0078C9C4 /* Foundation.framework */,
 				A5C8B13517BCE88B0078C9C4 /* CoreGraphics.framework */,
 				A5C8B15817BCE88B0078C9C4 /* SenTestingKit.framework */,
+				84E218CE17C152170056991D /* libxml2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -521,6 +553,8 @@
 			isa = PBXGroup;
 			children = (
 				A5D7FDF117BD0FE100A823E6 /* ControlVariables.h */,
+				84E218C117C151730056991D /* LNRUtils.h */,
+				84E218C217C151730056991D /* LNRUtils.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -542,7 +576,8 @@
 			children = (
 				84E99FFC17C0251200096106 /* LNRBrowseViewController.h */,
 				84E99FFD17C0251200096106 /* LNRBrowseViewController.m */,
-				84E99FFE17C0251200096106 /* LNRBrowseViewController.xib */,
+				84E99FFE17C0251200096106 /* LNRBrowseViewController_iPad.xib */,
+				84E218BF17C128B40056991D /* LNRBrowseViewController_iPhone.xib */,
 				A5D7FE6217BD107200A823E6 /* Layouts */,
 			);
 			path = ArticleBrowse;
@@ -629,6 +664,7 @@
 		A5D7FE8117BD1E1300A823E6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				84E218C417C151D60056991D /* HPPLE */,
 				A5D7FE8217BD1E1400A823E6 /* JASidePanel */,
 			);
 			path = Vendors;
@@ -805,8 +841,9 @@
 				A5D7FE5617BD0FE100A823E6 /* LNRMenuViewController_iPad.xib in Resources */,
 				A5D7FE5717BD0FE100A823E6 /* LNRMenuViewController_iPhone.xib in Resources */,
 				A5D7FE9117BD211300A823E6 /* view_Pad.html in Resources */,
-				84E9A00017C0251200096106 /* LNRBrowseViewController.xib in Resources */,
+				84E9A00017C0251200096106 /* LNRBrowseViewController_iPad.xib in Resources */,
 				84E9A00517C0253200096106 /* LNRDetailViewController.xib in Resources */,
+				84E218C017C128B50056991D /* LNRBrowseViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +908,10 @@
 				84E99FFF17C0251200096106 /* LNRBrowseViewController.m in Sources */,
 				84E9A00417C0253200096106 /* LNRDetailViewController.m in Sources */,
 				84E218BE17C0AF7A0056991D /* Article.m in Sources */,
+				84E218C317C151740056991D /* LNRUtils.m in Sources */,
+				84E218CB17C151F00056991D /* TFHpple.m in Sources */,
+				84E218CC17C151F00056991D /* TFHppleElement.m in Sources */,
+				84E218CD17C151F00056991D /* XPathQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
